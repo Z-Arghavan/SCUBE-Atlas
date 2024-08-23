@@ -1,7 +1,7 @@
 // Fetch and display games
 async function loadGames() {
     try {
-        const response = await fetch('public/forRepo.json');
+        const response = await fetch('/forRepo.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -76,7 +76,7 @@ function filterCategory(category) {
     const categoryImage = document.getElementById('category-image');
     categoryImage.style.display = 'none';
 
-    fetch('public/forRepo.json')
+    fetch('/forRepo.json')
         .then(response => response.json())
         .then(games => {
             const filteredGames = category.toLowerCase() === 'all'
@@ -165,7 +165,7 @@ function displayGames(games, query) {
             <img src="${getCategoryImage(game.category)}" alt="${game.category}" class="category-image">
             <h2>${highlightedName}</h2>
             <p>${highlightedDescription}</p>
-            <p>Category: ${game.category || 'Uncategorized'}</p>
+            <p>Category: ${game.category || 'Uncategorised'}</p>
             <p><a href="${game.publicationLink}" target="_blank">Publication</a> | 
                <a href="${game.gameLink}" target="_blank">Play Game</a></p>
         `;
