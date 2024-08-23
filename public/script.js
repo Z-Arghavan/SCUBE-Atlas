@@ -76,7 +76,7 @@ function filterCategory(category) {
     const categoryImage = document.getElementById('category-image');
     categoryImage.style.display = 'none';
 
-    fetch('/forRepo.json')
+    fetch('forRepo.json')
         .then(response => response.json())
         .then(games => {
             const filteredGames = category.toLowerCase() === 'all'
