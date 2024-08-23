@@ -1,0 +1,12 @@
+[
+    {
+        "title": "First Blog Post Title",
+        "date": "January 1, 2024",
+        "content": "This is the content of the first blog post. You can add text, images, links, and any other HTML elements here."
+    },
+    {
+        "title": "Second Blog Post Title",
+        "date": "February 1, 2024",
+        "content": "This is the content of the second blog post. Continue adding more posts below..."
+    }
+]

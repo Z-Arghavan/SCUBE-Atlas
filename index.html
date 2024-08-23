@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable and Circular Built Environment Serious Games</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">SCUBE Repo</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="hero">
+            <h1>Sustainable and Circular Built Environment Serious Games</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Games">
+                <button onclick="filterGames()">&#8594;</button>
+
+            </div>
+        </section>
+        
+        <section class="categories">
+            <div class="category-header">
+                <h2>Categories</h2>
+            </div>
+            <div class="category-buttons">
+                <button onclick="filterCategory('all')">All</button>
+                <button onclick="filterCategory('urban development')">Urban Development</button>
+                <button onclick="filterCategory('Energy Efficiency and Transition')">Energy Efficiency and Transition</button>
+                <button onclick="filterCategory('Water')">Water</button>
+                <button onclick="filterCategory('Circular Economy')">Circular Economy</button>
+                <button onclick="filterCategory('Natural Hazards')">Natural Hazards</button>
+                <button onclick="filterCategory('General Sustainable Development')">General Sustainable Development</button>
+                <button onclick="filterCategory('Construction')">Construction</button>
+            </div>
+            <div id="category-image-container">
+                <img id="category-image" src="" alt="Category Image" style="display:none;">
+            </div>
+        </section>
+        
+        <section class="games" id="games-container">
+            <!-- Game cards will be dynamically inserted here -->
+        </section>
+    </main>
+    
+    
+    <footer class="footer">
+        &copy; 2024 Eindhoven University of Technology (TU/e). All rights reserved.
+    </footer>
+
+    <!-- Only external JavaScript file is linked -->
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>

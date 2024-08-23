@@ -1,0 +1,53 @@
+/* Container for blog posts */
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between blog posts */
+}
+
+/* Blog post styled as a horizontal rectangle */
+.blog-post {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Image or thumbnail on the left */
+.blog-post img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and content */
+}
+
+/* Blog post content on the right */
+.blog-post-content {
+    flex-grow: 1; /* Take up remaining space */
+}
+
+.blog-post-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.blog-post-content p {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Links inside blog post */
+.blog-post-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-post-content a:hover {
+    text-decoration: underline;
+}

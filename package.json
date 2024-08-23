@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "three": "^0.166.1"
+  },
+  "devDependencies": {
+    "vite": "^5.3.4"
+  }
+}
