@@ -1,7 +1,7 @@
 // Fetch and display games
 async function loadGames() {
     try {
-        const response = await fetch('/forRepo.json');
+        const response = await fetch('forRepo.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -102,7 +102,7 @@ window.filterGames = function filterGames() {
     const query = queryElement.value.toLowerCase();
     console.log(`Search query: ${query}`);
 
-    fetch('public/forRepo.json')
+    fetch('forRepo.json')
         .then(response => response.json())
         .then(games => {
             const filteredGames = games.filter(game =>
