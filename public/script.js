@@ -1,7 +1,7 @@
 // Fetch and display games
 async function loadGames() {
     try {
-        const response = await fetch('/forRepo.json');
+        const response = await fetch('public/forRepo.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
