@@ -19,28 +19,28 @@ function getCategoryImage(category) {
 
     switch (category.toLowerCase()) {  // Convert category to lower case for consistent matching
         case 'urban development':
-            imagePath = 'images/urban_development.png';
+            imagePath = 'public/images/urban_development.png';
             break;
         case 'energy efficiency and transition':
-            imagePath = 'images/energy_efficiency.png';
+            imagePath = 'public/images/energy_efficiency.png';
             break;
         case 'water':
-            imagePath = 'images/water.png';
+            imagePath = 'public/images/water.png';
             break;
         case 'circular economy':
-            imagePath = 'images/circular_economy.png';
+            imagePath = 'public/images/circular_economy.png';
             break;
         case 'natural hazards':
-            imagePath = 'images/natural_hazards.png';
+            imagePath = 'public/images/natural_hazards.png';
             break;
         case 'general sustainable development':
-            imagePath = 'images/general_sustainable_development.png';
+            imagePath = 'public/images/general_sustainable_development.png';
             break;
         case 'construction':
-            imagePath = 'images/construction.png';
+            imagePath = 'public/images/construction.png';
             break;
         default:
-            imagePath = 'images/default_category.png';  // Ensure this path is correct
+            imagePath = 'public/images/default_category.png';  // Ensure this path is correct
             break;
     }
 
@@ -76,7 +76,7 @@ function filterCategory(category) {
     const categoryImage = document.getElementById('category-image');
     categoryImage.style.display = 'none';
 
-    fetch('/forRepo.json')
+    fetch('public/forRepo.json')
         .then(response => response.json())
         .then(games => {
             const filteredGames = category.toLowerCase() === 'all'
