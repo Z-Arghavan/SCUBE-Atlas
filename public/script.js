@@ -102,7 +102,7 @@ window.filterGames = function filterGames() {
     const query = queryElement.value.toLowerCase();
     console.log(`Search query: ${query}`);
 
-    fetch('/forRepo.json')
+    fetch('public/forRepo.json')
         .then(response => response.json())
         .then(games => {
             const filteredGames = games.filter(game =>
