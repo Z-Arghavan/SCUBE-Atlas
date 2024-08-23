@@ -19,28 +19,28 @@ function getCategoryImage(category) {
 
     switch (category.toLowerCase()) {  // Convert category to lower case for consistent matching
         case 'urban development':
-            imagePath = 'public/images/urban_development.png';
+            imagePath = 'images/urban_development.png';
             break;
         case 'energy efficiency and transition':
-            imagePath = '/images/energy_efficiency.png';
+            imagePath = 'images/energy_efficiency.png';
             break;
         case 'water':
-            imagePath = '/images/water.png';
+            imagePath = 'images/water.png';
             break;
         case 'circular economy':
-            imagePath = '/images/circular_economy.png';
+            imagePath = 'images/circular_economy.png';
             break;
         case 'natural hazards':
-            imagePath = '/images/natural_hazards.png';
+            imagePath = 'images/natural_hazards.png';
             break;
         case 'general sustainable development':
-            imagePath = '/images/general_sustainable_development.png';
+            imagePath = 'images/general_sustainable_development.png';
             break;
         case 'construction':
-            imagePath = '/images/construction.png';
+            imagePath = 'images/construction.png';
             break;
         default:
-            imagePath = '/images/default_category.png';  // Ensure this path is correct
+            imagePath = 'images/default_category.png';  // Ensure this path is correct
             break;
     }
 
