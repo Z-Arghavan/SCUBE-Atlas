@@ -22,25 +22,25 @@ function getCategoryImage(category) {
             imagePath = 'public/images/urban_development.png';
             break;
         case 'energy efficiency and transition':
-            imagePath = 'public/images/energy_efficiency.png';
+            imagePath = '/images/energy_efficiency.png';
             break;
         case 'water':
-            imagePath = 'public/images/water.png';
+            imagePath = '/images/water.png';
             break;
         case 'circular economy':
-            imagePath = 'public/images/circular_economy.png';
+            imagePath = '/images/circular_economy.png';
             break;
         case 'natural hazards':
-            imagePath = 'public/images/natural_hazards.png';
+            imagePath = '/images/natural_hazards.png';
             break;
         case 'general sustainable development':
-            imagePath = 'public/images/general_sustainable_development.png';
+            imagePath = '/images/general_sustainable_development.png';
             break;
         case 'construction':
-            imagePath = 'public/images/construction.png';
+            imagePath = '/images/construction.png';
             break;
         default:
-            imagePath = 'public/images/default_category.png';  // Ensure this path is correct
+            imagePath = '/images/default_category.png';  // Ensure this path is correct
             break;
     }
 
