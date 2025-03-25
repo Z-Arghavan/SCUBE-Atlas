@@ -14,7 +14,7 @@ The SCUBE Atlas solves this by:
 🔍 Data:
 SCUBE Atlas Website is built on a systematic review of academic literature using Scopus (486 papers), and provides overview and thematic categorisation of 158 final papers/games.
 
-  <img src="images/images/ScubeRepo.png">
+<img src="images/ScubeRepo.png">
 
 We are publishing our results as two journal articles. In the meantime, you can have a sneakpeek of our systematic review:
-  <img src="images/images/Breakdown of serious game analysis in sustainble and circular urban built environment.png">
+<img src="images/Breakdown of serious game analysis in sustainble and circular urban built environment.png">
