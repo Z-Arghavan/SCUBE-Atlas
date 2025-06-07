@@ -1,0 +1,38 @@
+
+name: Save issue data to JSON and Excel
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  convert-and-store:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Python packages
+        run: pip install pandas openpyxl
+
+      - name: Create /data folder if not exists
+        run: mkdir -p data
+
+      - name: Convert issue to JSON and Excel
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          python .github/scripts/save_issue.py
+          
+      - name: Commit and push files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/
+          git commit -m "Add issue submission: $ISSUE_TITLE"
+          git push
