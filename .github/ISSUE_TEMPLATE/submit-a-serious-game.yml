@@ -1,0 +1,112 @@
+name: Submit a Serious Game
+description: Contribute a serious game to the SCUBE Atlas
+title: "[Serious Game Submission] <Game Title>"
+labels: [submission, serious-game]
+body:
+  - type: input
+    id: game_name
+    attributes:
+      label: Game Title
+      description: What is the name of the game?
+      placeholder: e.g. C6
+    validations:
+      required: true
+
+  - type: dropdown
+    id: purpose
+    attributes:
+      label: Serious Purpose
+      description: What is the main purpose of the game?
+      options:
+        - Pedagogy
+        - Persuasion
+        - Participation
+        - Pedagogy + Persuasion
+        - Pedagogy + Participation
+        - Persuasion + Participation
+        - Pedagogy + Persuasion + Participation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: game_mode
+    attributes:
+      label: Game Mode
+      description: What type of platform is the game designed for?
+      options:
+        - Digital
+        - Physical
+        - Extended Reality (XR)
+        - Hybrid
+    validations:
+      required: true
+
+  - type: dropdown
+    id: player_mode
+    attributes:
+      label: Player Mode
+      description: What is the gameplay type?
+      options:
+        - Solo-player
+        - Multi-player
+        - Both
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience_age
+    attributes:
+      label: Audience Age
+      description: Who is the game primarily designed for?
+      options:
+        - Children (Below 18 years old)
+        - Adults (18 years and above)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: audience_type
+    attributes:
+      label: Audience Type
+      description: Who is this game intended for?
+      options:
+        - label: General Public
+        - label: Students
+        - label: Business Professionals
+
+  - type: textarea
+    id: game_description
+    attributes:
+      label: Game Description
+      description: Provide a short summary of the game and how it works.
+      placeholder: Max 300 words
+
+  - type: input
+    id: game_link
+    attributes:
+      label: Link to Game or Demo
+      description: Optional – add a link where the game can be accessed or downloaded.
+      placeholder: e.g. https://example.com/game
+
+  - type: input
+    id: reference
+    attributes:
+      label: Academic Reference (if available)
+      description: Link to a journal/conference paper or citation
+      placeholder: e.g. Author, Year, DOI
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Game Theme
+      description: Choose the dominant theme of the game
+      options:
+        - Sustainable Community Engagement
+        - Natural Hazards and Extreme Events
+        - Urban Development and Planning
+        - Energy Efficiency and Transition
+        - Water Management
+        - Waste and Resource Management
+        - Construction and Architecture
+    validations:
+      required: true
